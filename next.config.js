@@ -30,7 +30,7 @@ module.exports = (phase) => {
       if (isDev) return 'http://localhost:3000/'
       if (isProd) return 'https://friday-franchise-next.vercel.app/'
     })(),
-    // NEXT_PUBLIC_GA_ID: process.env.NEXT_PUBLIC_GA_ID
+    NEXT_PUBLIC_GA_ID: process.env.NEXT_PUBLIC_GA_ID
   }
 
   // Next.config returns an object
