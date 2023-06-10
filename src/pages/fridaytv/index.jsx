@@ -33,10 +33,6 @@ export const getStaticProps = async () => {
   const data = await response.json();
   console.log(data);
 
-  if(!response.ok){
-    throw new Error(`Failed to fetch posts - Error ${response.status}: ${data.message}`)
-  }
-
   return {
     props: {
       articles: data
