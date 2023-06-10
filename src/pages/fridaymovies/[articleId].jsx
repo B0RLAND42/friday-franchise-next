@@ -25,25 +25,25 @@ const ArticleDetailPage = ({ article }) => {
 }
 
 // STATIC SITE DYNAMIC PATHS
-// export const getStaticPaths = async () => {
+export const getStaticPaths = async () => {
 
-//   // 1) Fetch API Data
-//   const response = await fetch(`${process.env.SERVER_NAME}/api/movies`);
-//   const articles = await response.json();
+  // 1) Fetch API Data
+  const response = await fetch(`${process.env.SERVER_NAME}/api/movies`);
+  const articles = await response.json();
 
-//   // 2) Pull ALL ID's out of the articles array ONLY
-//   const idList = articles.map(article => article.id);
+  // 2) Pull ALL ID's out of the articles array ONLY
+  const idList = articles.map(article => article.id);
 
-//   // 3) Pre-build ALL URL paths for ALL existing ID's in array
-//   const paths = idList.map(id => (
-//     { params: { articleId: id.toString() } }
-//   ))
+  // 3) Pre-build ALL URL paths for ALL existing ID's in array
+  const paths = idList.map(id => (
+    { params: { articleId: id.toString() } }
+  ))
 
-//   return {
-//       paths,
-//       fallback:false
-//   }
-// }
+  return {
+      paths,
+      fallback:false
+  }
+};
 
 // STATIC SITE GENERATION
 export const getStaticProps = async (context) => {
