@@ -17,8 +17,8 @@ const ArticleDetailPage = ({ article }) => {
         image={article.image}
         description={article.description}
         category={article.category}
-        year={article.year}
         director={article.director}
+        year={article.year}
       />
     </Fragment>
   )

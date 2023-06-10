@@ -20,7 +20,6 @@ function FridayTvPage(props) {
         description='The original series aired from 1987-1990'
         bgImage="/backgrounds/fridaytv.jpg"
       />
-      {/* {ausArticles.length > 0 && <ArticlesList articles={ausArticles} />} */}
       {articles.length > 0 && <ArticlesList 
         articles={articles}
       />}

@@ -20,7 +20,6 @@ function FridayDocPage(props) {
         description='The Making of "Friday the 13th"'
         bgImage="/backgrounds/jason1.jpg"
       />
-      {/* {worldArticles.length > 0 && <ArticlesList articles={worldArticles} />} */}
       {articles.length > 0 && <ArticlesList 
         articles={articles}
       />}
