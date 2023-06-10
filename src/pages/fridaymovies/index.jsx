@@ -11,13 +11,13 @@ function FridayMoviesPage(props) {
       <Head>
         <title>FridayThe13th | Movies</title>
         <meta 
-          name='description'
-          description=''
+          name="description"
+          description=""
         />
       </Head>
       <HeroMovieSection 
-        title='FILMOGRAPHY' 
-        description='Browse information about all Friday The 13th movie releases'
+        title="FILMOGRAPHY" 
+        description="Browse information about all Friday The 13th movie releases"
         bgImage="/backgrounds/fridaymovies2.jpg"
       />
       {articles.length > 0 && <ArticlesList 

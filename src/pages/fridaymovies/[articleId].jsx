@@ -8,7 +8,7 @@ const ArticleDetailPage = ({ article }) => {
       <Head>
         <title>{`Friday The 13th | ${article.category}`}</title>
         <meta 
-          name='description'
+          name="description"
           description={article.title}
         />
       </Head>
