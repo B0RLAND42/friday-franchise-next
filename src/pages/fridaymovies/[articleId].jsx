@@ -21,7 +21,7 @@ const ArticleDetailPage = ({ article }) => {
         year={article.year}
       />
     </Fragment>
-  )
+  );
 };
 
 // STATIC SITE DYNAMIC PATHS
@@ -46,7 +46,7 @@ export const getStaticPaths = async () => {
 };
 
 // STATIC SITE GENERATION
-export const getStaticProps = async () => {
+export const getStaticProps = async (context) => {
 
   // 1) Fetch API Data
   const response = await fetch(`${process.env.SERVER_NAME}/api/movies`);
