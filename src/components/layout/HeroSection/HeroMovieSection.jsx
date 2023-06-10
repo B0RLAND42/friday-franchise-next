@@ -1,7 +1,7 @@
 import styles from './HeroMovieSection.module.scss';
 
 
-function HeroMovieSection({ title, description, bgImage }) {
+function HeroMovieSection({ title, bgImage }) {
   // SEE on STATIC ASSETS: https://nextjs.org/docs/pages/building-your-application/optimizing/static-assets
 
   return (
