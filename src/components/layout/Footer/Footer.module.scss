@@ -84,3 +84,19 @@ transform-origin: left;
 transform: scaleX(1);
 }
 
+@media (max-width: 675px) {
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer .brand {
+    font-size: 12px;
+  }
+
+  .footer ul {
+    font-size: 10px;
+  }
+}
+

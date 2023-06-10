@@ -88,3 +88,21 @@
 transform-origin: left;
 transform: scaleX(1);
 }
+
+@media (max-width: 675px) {
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header .logoMain {
+    font-size: 17px;
+    display: flex;
+  }
+
+  .blend span {
+    font-size: 15px;
+    display: flex;
+  }
+}
