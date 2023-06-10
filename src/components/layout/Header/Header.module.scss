@@ -1,0 +1,90 @@
+@use '@/styles/scss/abstracts/' as *;
+
+.header {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $primaryColor;
+  padding: 0 10%;
+  position: fixed; // Header will follow user scroll
+  z-index: 1;
+
+  .brand {
+    font-size: 2.3rem;
+    // margin-top: 6px;
+    font-weight: 700;
+    color: $complementaryColor;
+  
+    .logoEnds {
+      color: $brandColor;
+    }
+  
+    .logoMain {
+      color: $complementaryColor;
+  
+      &:hover {
+        color: $brandSkewColor;
+        transition: 0.1s;
+        text-shadow: 0 0 20px $dangerColor, 0 0 20px $dangerColor;
+      }
+    }
+  }
+
+  nav {
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: baseline;
+    }
+  
+    li {
+      margin-left: 3rem;
+      // margin-top: 6px;
+    }
+  
+    a {
+      color: $highlightColor;
+      font-size: 1.8em;
+      font-weight: 400;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      text-decoration: none;
+
+      span {
+        font-weight: 700;
+      }
+  
+      &:hover, &:active {
+        color: $complementaryColor;
+        transition: 0.1s;
+      }
+    }
+  }
+}
+
+.blend {
+  position: relative;
+}
+
+.blend::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  border-radius: 4px;
+  background-color: $complementaryColor;;
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform .3s ease-in-out;
+}
+
+.blend:hover::before {
+transform-origin: left;
+transform: scaleX(1);
+}

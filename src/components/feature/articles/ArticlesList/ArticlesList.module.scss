@@ -1,0 +1,6 @@
+@use '@/styles/scss/abstracts/' as *;
+
+.back {
+  background-color: $dangerColor;
+  padding: 1em;
+}
