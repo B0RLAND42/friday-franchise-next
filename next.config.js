@@ -28,7 +28,7 @@ module.exports = (phase) => {
   const env = {
     SERVER_NAME: (() => {
       if (isDev) return 'http://localhost:3000/'
-      if (isProd) return 'https://YOUR-DOMAIN-HERE.vercel.app/'
+      if (isProd) return 'https://friday-franchise-next.vercel.app/'
     })(),
     // NEXT_PUBLIC_GA_ID: process.env.NEXT_PUBLIC_GA_ID
   }
