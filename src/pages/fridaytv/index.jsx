@@ -31,7 +31,7 @@ function FridayTvPage(props) {
 export const getStaticProps = async () => {
   const response = await fetch (`${process.env.SERVER_NAME}/api/tvseries`);
   const data = await response.json();
-  console.log(data);
+  
 
   return {
     props: {
