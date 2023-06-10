@@ -25,7 +25,7 @@ function FridayMoviesPage(props) {
       />}
     </Fragment>
   )
-}
+};
 
 export const getStaticProps = async () => {
   const response = await fetch (`${process.env.SERVER_NAME}/api/movies`);
