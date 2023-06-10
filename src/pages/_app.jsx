@@ -13,7 +13,7 @@ function App({ Component, pageProps }) {
   useEffect(() => {
 
     // Declare a function which passes the clicked URL to GA event config function
-    const handleRouteChange = () => {
+    const handleRouteChange = (url) => {
       ga.pageview(url)
     }
 
