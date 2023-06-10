@@ -28,17 +28,17 @@ function FridayTvPage(props) {
   );
 }
 
-export const getStaticProps = async () => {
-  const response = await fetch (`${process.env.SERVER_NAME}/api/tvseries`);
-  const data = await response.json();
-  console.log(data);
+// export const getStaticProps = async () => {
+//   const response = await fetch (`${process.env.SERVER_NAME}/api/tvseries`);
+//   const data = await response.json();
+//   console.log(data);
 
-  return {
-    props: {
-      articles: data
-    },
-    revalidate: 60 * 60
-  };
-};
+//   return {
+//     props: {
+//       articles: data
+//     },
+//     revalidate: 60 * 60
+//   };
+// };
 
 export default FridayTvPage;
