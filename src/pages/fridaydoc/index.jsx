@@ -31,7 +31,7 @@ function FridayDocPage(props) {
 export const getStaticProps = async () => {
   const response = await fetch (`${process.env.SERVER_NAME}/api/docs`);
   const data = await response.json();
-  
+  console.log(data);
 
   return {
     props: {
