@@ -1,5 +1,6 @@
 import Link from 'next/link';
-import styles from './Footer.module.scss'
+import styles from './Footer.module.scss';
+import { FaGithub } from "react-icons/fa";
 
 function Footer() {
   const getCurrentYear = () => {
@@ -19,7 +20,6 @@ function Footer() {
       </div>
       <nav>
         <ul>
-          
           <li>
             <Link href='/terms' className={styles.blend}>Terms of Use </Link>
           </li>
@@ -28,6 +28,9 @@ function Footer() {
           </li>
         </ul>
       </nav>
+        <a href="https://github.com/B0RLAND42" target="_blank" rel="noreferrer">
+          <FaGithub size={30} style={{ color: "#FFFFFF", marginLeft: "2.4rem" }}/>
+        </a>
     </footer>
   );
 }
