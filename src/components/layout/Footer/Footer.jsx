@@ -24,6 +24,9 @@ function Footer() {
             <Link href='/terms' className={styles.blend}>Terms of Use </Link>
           </li>
           <li>
+            <Link href='/contact' className={styles.blend}>Contact Us </Link>
+          </li>
+          <li>
             <Link href='/about' className={styles.blend}>About Friday The 13th FanSite </Link>
           </li>
         </ul>
