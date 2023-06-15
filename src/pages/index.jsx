@@ -16,7 +16,7 @@ function HomePage() {
       <HeroSection 
         title='FRIDAY THE 13TH' 
         description=''
-        bgImage="/backgrounds/fridaymovies.jpg"
+        bgImage="/backgrounds/fridaymovies.webp"
       />
     </Fragment>
   )
