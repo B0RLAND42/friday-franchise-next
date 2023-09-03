@@ -9,6 +9,10 @@
   background-color: $primaryColor;
   padding: 0 10%;
 
+  .gitIcon {
+    margin-left: 2.4rem;
+  }
+
   .brand {
     font-size: 1.4rem;
     // margin-top: 6px;
@@ -85,18 +89,30 @@ transform: scaleX(1);
 }
 
 @media (max-width: 675px) {
+  .logoMain {
+    display: none;
+  }
+
   .footer {
+    margin: 0 auto;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
   }
 
-  .footer .brand {
-    font-size: 12px;
+  .footer nav ul li {
+    display: table;
+    margin: 0 auto;
+    padding-bottom: 6px;
   }
 
-  .footer ul {
-    font-size: 10px;
+  .footer .blend {
+    font-size: 2rem;
+  }
+
+  .gitIcon {
+    margin-right: 2.4rem;
   }
 }
 

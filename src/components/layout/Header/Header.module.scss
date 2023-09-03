@@ -90,19 +90,54 @@ transform: scaleX(1);
 }
 
 @media (max-width: 675px) {
+  // .header {
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: center;
+  // }
+
+  // .header .logoMain {
+  //   font-size: 17px;
+  //   display: flex;
+  // }
+
+  // .blend span {
+  //   font-size: 15px;
+  //   display: flex;
+  // }
+
+  // .logoMain {
+  //   display: none;
+  // }
+
   .header {
+    height: auto;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-top: 6px;
   }
 
   .header .logoMain {
-    font-size: 17px;
-    display: flex;
+    text-align: center;
+    color: goldenrod !important;
   }
 
-  .blend span {
-    font-size: 15px;
-    display: flex;
+  .header nav ul {
+    display: block;
+    text-align: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 12px;
+  }
+
+  .header nav ul li {
+    display: table;
+    margin: 0 auto;
+  }
+
+  .header .blend {
+    font-size: 2rem;
   }
 }
