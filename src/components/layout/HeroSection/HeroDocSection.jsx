@@ -11,7 +11,7 @@ function HeroDocSection({ title, description, bgImage }) {
     >
       <div className={styles.overlay}>
         <h1><span>{title}</span></h1>
-        <p>{description}</p>
+        <p>The Making of <span>FRIDAY THE 13th</span></p>
       </div>
       
     </div>

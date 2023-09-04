@@ -23,8 +23,8 @@ function Footer() {
           </li>
         </ul>
       </nav>
-        <a href="https://github.com/B0RLAND42" className={styles.gitIcon} target="_blank" rel="noreferrer">
-          <FaGithub size={30} style={{ color: "#FFFFFF" }}/>
+        <a href="https://github.com/B0RLAND42"  target="_blank" rel="noreferrer">
+          <FaGithub className={styles.gitIcon} size={30} style={{ color: "#FFFFFF" }}/>
         </a>
     </footer>
   );

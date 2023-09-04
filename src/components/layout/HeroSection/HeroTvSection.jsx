@@ -12,7 +12,6 @@ function HeroTvSection({ title, description, bgImage }) {
       <div className={styles.overlay}>
         <h1><span>the series</span></h1>
         <p>{description}</p>
-        <p>New series expected in 2023</p>
       </div>
       
     </div>

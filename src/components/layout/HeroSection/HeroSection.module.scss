@@ -44,6 +44,16 @@
   }
 }
 
+.spanItalic {
+  text-decoration: none !important;
+  font-style: italic;
+  color: $primaryColor !important;
+  background-color: goldenrod;
+  text-shadow: none;
+  padding: 0 3px;
+  padding-right: 6px !important;
+}
+
 @media (max-width: 675px) {
   .showcase .overlay p {
     width: 80%;

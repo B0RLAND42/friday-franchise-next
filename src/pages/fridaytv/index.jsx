@@ -18,7 +18,7 @@ function FridayTvPage(props) {
       <HeroTvSection 
         title='FRIDAY THE 13th' 
         description='The original series aired from 1987-1990'
-        bgImage="/backgrounds/fridaytv.jpg"
+        bgImage="/backgrounds/fridaytv.webp"
       />
       {/* {ausArticles.length > 0 && <ArticlesList articles={ausArticles} />} */}
       {articles.length > 0 && <ArticlesList 

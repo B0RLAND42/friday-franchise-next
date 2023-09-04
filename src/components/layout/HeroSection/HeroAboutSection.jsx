@@ -12,7 +12,6 @@ function HeroSection({ title, description, bgImage }) {
       <div className={styles.overlay}>
         <h1><span>{title}</span></h1>
         <p>{description}</p>
-        <p>For personal and entertainment purposes only.</p>
       </div>
       
     </div>

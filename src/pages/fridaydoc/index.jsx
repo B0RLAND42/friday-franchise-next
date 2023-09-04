@@ -18,7 +18,7 @@ function FridayDocPage(props) {
       <HeroDocSection 
         title='Documentaries' 
         description='The Making of "Friday the 13th"'
-        bgImage="/backgrounds/jason1.jpg"
+        bgImage="/backgrounds/jason1.webp"
       />
       {/* {worldArticles.length > 0 && <ArticlesList articles={worldArticles} />} */}
       {articles.length > 0 && <ArticlesList 

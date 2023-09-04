@@ -15,8 +15,8 @@ function FridayAboutPage() {
       </Head>
       <HeroAboutSection 
         title='About friday the 13th fansite' 
-        description='This website was built as part of a school project for Holmesglen.'
-        bgImage="/backgrounds/fridaymain2.jpg"
+        description='This website was built as a requisite for Holmesglen Diploma of IT.'
+        bgImage="/backgrounds/fridaymain2.webp"
       />
     </Fragment>
   )

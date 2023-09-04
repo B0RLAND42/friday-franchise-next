@@ -37,6 +37,15 @@
       margin: 0;
       padding: 0;
       text-shadow: 0 0 20px #333333, 0 0 20px #000000;
+
+      span {
+        color: $primaryColor;
+        text-shadow: none;
+        background-color: goldenrod;
+        padding: 0 3px;
+        padding-right: 7px;
+        font-style: italic;
+      }
     }
   }
 }

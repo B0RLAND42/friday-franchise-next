@@ -18,7 +18,7 @@ function FridayMoviesPage(props) {
       <HeroMovieSection 
         title='FILMOGRAPHY' 
         description='Browse information about all "Friday The 13th" movie releases'
-        bgImage="/backgrounds/fridaymovies2.jpg"
+        bgImage="/backgrounds/fridaymovies2.webp"
       />
       {/* {articles.length > 0 && <ArticlesList 
         articles={articles}
