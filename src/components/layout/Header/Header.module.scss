@@ -2,142 +2,130 @@
 
 .header {
   width: 100%;
-  height: 10vh;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
   background-color: $primaryColor;
-  padding: 0 10%;
-  position: fixed; // Header will follow user scroll
-  z-index: 1;
+  height: 10vh;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
 
-  .brand {
-    font-size: 2.3rem;
-    // margin-top: 6px;
-    font-weight: 700;
-    color: $complementaryColor;
-  
-    .logoEnds {
-      color: $brandColor;
-    }
-  
-    .logoMain {
-      color: $complementaryColor;
-  
-      &:hover {
-        color: $brandSkewColor;
-        transition: 0.1s;
-        text-shadow: 0 0 20px $dangerColor, 0 0 20px $dangerColor;
-      }
-    }
+.brand {
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: $complementaryColor;
+}
+
+.logoMain {
+  cursor: pointer;
+
+  &:hover {
+    color: $brandSkewColor;
+    text-shadow: 0 0 20px $dangerColor, 0 0 20px $dangerColor;
+    transition: 0.1s;
   }
+}
 
-  nav {
-    ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      align-items: baseline;
-    }
-  
-    li {
-      margin-left: 3rem;
-      // margin-top: 6px;
-    }
-  
-    a {
-      color: $highlightColor;
-      font-size: 1.8em;
-      font-weight: 400;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      text-decoration: none;
+.hamburger {
+  display: none; // hidden on desktop
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: $highlightColor;
+  z-index: 1001;
+}
 
-      span {
-        font-weight: 700;
-      }
-  
-      &:hover, &:active {
-        color: $complementaryColor;
-        transition: 0.1s;
-      }
-    }
+.nav {
+  display: flex;
+}
+
+.navList {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navList li {
+  margin-left: 3rem;
+}
+
+.navList a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $highlightColor;
+  font-weight: 700;
+  font-size: 1.8rem;
+
+  &:hover {
+    color: $complementaryColor;
   }
 }
 
 .blend {
   position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: $complementaryColor;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  &:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+  }
 }
 
-.blend::before {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 3px;
-  border-radius: 4px;
-  background-color: $complementaryColor;;
-  bottom: 0;
-  left: 0;
-  transform-origin: right;
-  transform: scaleX(0);
-  transition: transform .3s ease-in-out;
-}
-
-.blend:hover::before {
-transform-origin: left;
-transform: scaleX(1);
-}
-
+/* MOBILE */
 @media (max-width: 675px) {
-  // .header {
-  //   display: flex;
-  //   align-items: center;
-  //   justify-content: center;
-  // }
-
-  // .header .logoMain {
-  //   font-size: 17px;
-  //   display: flex;
-  // }
-
-  // .blend span {
-  //   font-size: 15px;
-  //   display: flex;
-  // }
-
-  // .logoMain {
-  //   display: none;
-  // }
-
-  .header {
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-top: 6px;
+  .hamburger {
+    display: block; // show hamburger
   }
 
-  .header .logoMain {
-    text-align: center;
-    color: goldenrod !important;
-  }
-
-  .header nav ul {
+  .nav {
     display: block;
+    position: fixed;
+    top: 10vh;
+    left: 0;
+    width: 100%;
+    background-color: $primaryColor;
     text-align: center;
-    align-items: center;
-    padding-top: 10px;
-    padding-bottom: 12px;
+    overflow: hidden;
+    max-height: 0;          // hidden initially
+    opacity: 0;             // invisible initially
+    transition: max-height 0.4s ease, opacity 0.4s ease; // smooth slide + fade
+    z-index: 999;
   }
 
-  .header nav ul li {
-    display: table;
-    margin: 0 auto;
+  .nav.open {
+    max-height: 500px; // enough for 3-4 links
+    opacity: 1;        // fade in
   }
 
-  .header .blend {
-    font-size: 2rem;
+  .navList {
+    flex-direction: column;
+    display: flex;
+    margin: 0;
+    padding: 1rem 0;
   }
+
+  .navList li {
+    margin: 1rem 0;
+  }
+
+  .navList a {
+    font-size: 1.5rem;
+  }
+
 }
