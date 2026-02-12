@@ -9,3 +9,19 @@ $brandColor: #4338ca;
 $brandSkewColor: goldenrod;
 $dangerColor: #7f1d1d;
 $dangerHighlight: #be123c;
+
+$primaryGradient: linear-gradient(
+  to right,
+  $primaryColor 0%,
+  lighten($primaryColor, 20%) 50%,
+  $primaryColor 100%
+);
+
+$footerGradient: linear-gradient(
+  to bottom,
+  darken($primaryColor, 25%) 0%,
+  darken($primaryColor, 15%) 4%,
+  darken($primaryColor, 5%) 4%,
+  $primaryColor 28%,
+  $primaryColor 100%
+);

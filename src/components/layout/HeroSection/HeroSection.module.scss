@@ -3,12 +3,12 @@
 .showcase {
   background: no-repeat center/cover;  
   // bg-image is passed in as dynamic prop in Hero.jsx
-  height: 80vh;
+  height: 100vh;
   color: $complementaryColor;
 
   .overlay {
     background-color: rgba(0, 0, 15, 0.7);
-    height: 80vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -55,6 +55,7 @@
 }
 
 @media (max-width: 675px) {
+
   .showcase .overlay p {
     width: 80%;
     font-size: 32px;

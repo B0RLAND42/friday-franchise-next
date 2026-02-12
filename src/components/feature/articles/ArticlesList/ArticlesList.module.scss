@@ -1,6 +1,6 @@
 @use '@/styles/scss/abstracts/' as *;
 
 .back {
-  background-color: $dangerColor;
+  background: $primaryGradient;
   padding: 1em;
 }
