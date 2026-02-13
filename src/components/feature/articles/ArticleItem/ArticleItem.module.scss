@@ -20,7 +20,7 @@
     margin: 0rem;
 
     h2 {
-      font-size: 1.3em;
+      font-size: 1em;
       color: $primaryColor;
     }
   }
@@ -31,3 +31,8 @@
   text-align: center;
 }
 
+@media (max-width: 675px) {
+  .articleContent h2 {
+    font-size: 1.2em !important;
+  }
+}

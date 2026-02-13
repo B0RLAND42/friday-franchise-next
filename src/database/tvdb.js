@@ -173,10 +173,10 @@ export const articles = [
   {
     id: 4,
     title: "Crystal Lake",
-    year: "Expected release in 2023",
+    year: "Expected release in 2026",
     description: "A new series based on the Friday the 13th franchise. Prequel series to Friday the 13th, follows a doomed small town where camp counselors come to die.",
     episode1: "To Be Determined",
     category: "Crystal Lake",
-    image: "/articles/fridaytvs4.jpg",
+    image: "/articles/crystal-lake-tv.webp",
   }
 ]
