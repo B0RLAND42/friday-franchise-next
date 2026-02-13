@@ -25,9 +25,9 @@ function ArticleDetail(props) {
           </div>
           <div className={styles.articleContent}>
             <h1>{props.title}</h1>
-            <h2>
+            <h3>
               <span>Director</span> {props.director}
-            </h2>
+            </h3>
             <h3>
               <span>Release Date</span> {props.year}
             </h3>
