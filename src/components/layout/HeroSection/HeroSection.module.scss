@@ -53,11 +53,12 @@
 .spanItalic {
   text-decoration: none !important;
   font-style: italic;
+  font-weight: 700;
   color: $primaryColor !important;
   background-color: goldenrod;
   text-shadow: none;
-  padding: 0 3px;
-  padding-right: 6px !important;
+  padding: 3px 10px 3px 6px;
+  border-radius: 4px;
 }
 
 @media (max-width: 675px) {

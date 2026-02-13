@@ -1,9 +1,9 @@
 import styles from './Layout.module.scss';
 import Header from './Header';
 import Footer from './Footer';
-import { Mouse_Memoirs } from 'next/font/google';
+import { Barlow_Condensed } from 'next/font/google';
 
-const lato = Mouse_Memoirs({
+const lato = Barlow_Condensed({
   subsets: ['latin'],
   weight: ['400'],
   style: ['normal']

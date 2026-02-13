@@ -11,7 +11,7 @@ function HeroSection({ title, bgImage }) {
       <div className={styles.overlay}>
         <img src="/images/friday-logo-font.png" alt="" />
         
-        <p>The <span>ULTIMATE</span> Fan Site dedicated to the <span className={styles.spanItalic}>FRIDAY THE 13th</span> Franchise</p>
+        <p>Fan Site dedicated to the <span className={styles.spanItalic}>FRIDAY THE 13th</span> Franchise</p>
       </div>
       
     </div>
