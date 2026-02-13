@@ -1,7 +1,14 @@
 @use '@/styles/scss/abstracts/' as *;
 
 %card {
-  background-color: #d3d3d3;
+  background: linear-gradient(
+    to right,
+    #666666 0%,      /* very dark left edge */
+    #888888 10%,     /* fading from dark */
+    #d3d3d3 50%,     /* center light */
+    #888888 90%,     /* fading to dark right */
+    #666666 100%     /* very dark right edge */
+  );
   border-radius: 6px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.9);
 
