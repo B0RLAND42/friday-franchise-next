@@ -32,7 +32,7 @@ export default function Header() {
       {/* Brand */}
       <div className={styles.brand}>
         <Link href="/">
-          <span className={styles.logoMain}>Friday the 13th</span>
+          <img src="/images/friday-logo-font.png" alt="" />
         </Link>
       </div>
 

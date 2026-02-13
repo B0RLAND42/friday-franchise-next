@@ -1,6 +1,5 @@
 import styles from './HeroSection.module.scss';
 
-
 function HeroSection({ title, bgImage }) {
   // SEE on STATIC ASSETS: https://nextjs.org/docs/pages/building-your-application/optimizing/static-assets
 
@@ -10,7 +9,8 @@ function HeroSection({ title, bgImage }) {
       style={{ backgroundImage: `url(${bgImage})` }}
     >
       <div className={styles.overlay}>
-        <h1><span>{title}</span></h1>
+        <img src="/images/friday-logo-font.png" alt="" />
+        
         <p>The <span>ULTIMATE</span> Fan Site dedicated to the <span className={styles.spanItalic}>FRIDAY THE 13th</span> Franchise</p>
       </div>
       
