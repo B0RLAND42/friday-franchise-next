@@ -3,11 +3,13 @@
 %card {
   background: linear-gradient(
     to right,
-    #666666 0%,      /* very dark left edge */
-    #888888 10%,     /* fading from dark */
-    #d3d3d3 50%,     /* center light */
-    #888888 90%,     /* fading to dark right */
-    #666666 100%     /* very dark right edge */
+    #999999 0%,       /* subtle dark edge left */
+    #bbbbbb 20%,      /* start blending into light */
+    #d0d0d0 40%,      /* approaching light center */
+    #d3d3d3 50%,      /* light center */
+    #d0d0d0 60%,      /* blending right side */
+    #bbbbbb 80%,      /* smooth transition to edge */
+    #999999 100%      /* subtle dark edge right */
   );
   border-radius: 6px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.9);
