@@ -1,7 +1,8 @@
 @use '@/styles/scss/abstracts/' as *;
 
 .articleMain {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
 
   .imageBox {
     height: 65vh;
@@ -16,19 +17,21 @@
   }
 
   .articleContent {
-    padding: 0rem;
-    margin: 0rem;
+    padding: 0.5rem;
+    text-align: left;
 
     h2 {
       font-size: 1em;
       color: $primaryColor;
+      margin: 0;
     }
   }
 }
 
 .articleFooter {
-  padding-bottom: 1rem;
-  text-align: center;
+  padding: 0.5rem 1rem 1.2rem;
+  display: flex;
+  justify-content: flex-end;
 }
 
 @media (max-width: 675px) {
