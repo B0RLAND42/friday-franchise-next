@@ -10,8 +10,8 @@ function HeroMovieSection({ title, bgImage }) {
       style={{ backgroundImage: `url(${bgImage})` }}
     >
       <div className={styles.overlay}>
-        <h1><span>{title}</span></h1>
-        <p>Browse <span>FRIDAY THE 13th</span> movie info</p>
+        <img src="/images/film.png" alt="" />
+        <img src="/images/browse.png" alt="" />
       </div>
       
     </div>

@@ -10,8 +10,8 @@ function HeroDocSection({ title, description, bgImage }) {
       style={{ backgroundImage: `url(${bgImage})` }}
     >
       <div className={styles.overlay}>
-        <h1><span>{title}</span></h1>
-        <p>The Making of <span>FRIDAY THE 13th</span></p>
+        <img src="/images/docs.png" alt="" />
+        <img src="/images/making.png" alt="" />
       </div>
       
     </div>

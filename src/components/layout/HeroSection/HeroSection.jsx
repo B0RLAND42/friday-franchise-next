@@ -9,9 +9,8 @@ function HeroSection({ title, bgImage }) {
       style={{ backgroundImage: `url(${bgImage})` }}
     >
       <div className={styles.overlay}>
-        <img src="/images/friday-logo-font.png" alt="" />
-        
-        <p>Fan Site dedicated to the <span className={styles.spanItalic}>FRIDAY THE 13th</span> Franchise</p>
+        <img src="/images/friday13.png" alt="" />
+        <img src="/images/franchise.png" alt="" />
       </div>
       
     </div>

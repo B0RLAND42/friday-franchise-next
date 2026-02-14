@@ -10,8 +10,7 @@ function HeroTvSection({ title, description, bgImage }) {
       style={{ backgroundImage: `url(${bgImage})` }}
     >
       <div className={styles.overlay}>
-        <h1><span>the series</span></h1>
-        <p>{description}</p>
+        <img src="/images/series.png" alt="" />
       </div>
       
     </div>
