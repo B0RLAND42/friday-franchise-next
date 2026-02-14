@@ -26,6 +26,7 @@
     }
 
     h2, h3 {
+      font-weight: normal;
       text-align: left;
     }
 
@@ -40,6 +41,14 @@
       padding: 4px 6px;
       border-radius: 4px;
     }
+
+    &::after {
+    content: "";
+    display: block;
+    height: 1px;
+    background: rgba(60, 60, 60, 0.279);
+    margin: 1rem 0 0;
+  }
 
   }
 }

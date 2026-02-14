@@ -2,15 +2,15 @@
 
 %card {
   background: linear-gradient(
-    to right,
-    #999999 0%,       /* subtle dark edge left */
-    #bbbbbb 20%,      /* start blending into light */
-    #d0d0d0 40%,      /* approaching light center */
-    #d3d3d3 50%,      /* light center */
-    #d0d0d0 60%,      /* blending right side */
-    #bbbbbb 80%,      /* smooth transition to edge */
-    #999999 100%      /* subtle dark edge right */
-  );
+  to right,
+  #999999 0%,        /* subtle dark edge left */
+  #aaaaaa 15%,       /* start smooth blending */
+  #c8c8c8 35%,       /* lighter mid-left */
+  #d3d3d3 50%,       /* lightest center */
+  #c8c8c8 65%,       /* mid-right */
+  #aaaaaa 85%,       /* smooth transition to edge */
+  #999999 100%       /* subtle dark edge right */
+);
   border-radius: 6px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.9);
 
