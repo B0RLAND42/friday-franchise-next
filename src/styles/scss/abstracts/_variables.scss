@@ -34,6 +34,8 @@ $secondaryGradient: radial-gradient(
   darken($primaryColor, 30%) 100%
 );
 
+$thirdGradient: linear-gradient( to right, $primaryColor 0%, lighten($primaryColor, 20%) 50%, $primaryColor 100% );
+
 $footerGradient: linear-gradient(
   to bottom,
   darken($primaryColor, 25%) 0%,
