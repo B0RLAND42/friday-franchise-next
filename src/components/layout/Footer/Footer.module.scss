@@ -9,7 +9,7 @@
   align-items: center;
   justify-content: center;
   gap: 32px;
-  background: $footerGradient;
+  background: $thirdGradient;
   padding: 0 10%;
 }
 
@@ -18,7 +18,7 @@
   &:hover {
     color: $brandSkewColor;
     transition: 0.1s;
-    text-shadow: 0 0 20px $dangerColor, 0 0 20px $dangerColor, 0 0 20px $dangerColor;
+    text-shadow: 0 0 6px $dangerColor;
   }
 }
 
