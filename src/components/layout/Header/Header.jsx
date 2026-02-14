@@ -29,13 +29,6 @@ export default function Header() {
 
   return (
     <header className={styles.header}>
-      {/* Brand */}
-      <div className={styles.brand}>
-        <Link href="/">
-          <img src="/images/friday-logo-font.png" alt="" />
-        </Link>
-      </div>
-
       {/* Hamburger */}
       <button
         ref={buttonRef}
@@ -45,6 +38,15 @@ export default function Header() {
       >
         <MdOutlineMenu size={30} />
       </button>
+
+      {/* Brand */}
+      <div className={styles.brand}>
+        <Link href="/">
+          <img src="/images/friday-old.png" alt="" />
+        </Link>
+      </div>
+
+      
 
       {/* Nav */}
       <nav

@@ -16,7 +16,7 @@
     padding-right: 10rem;
 
     h1 {
-      font-size: 4em;
+      font-size: 3em;
       font-weight: 400;
       letter-spacing: 1px;
       text-transform: uppercase;
@@ -53,12 +53,13 @@
   }
 
   .overlay h1 {
-    line-height: 3.5rem;
+    line-height: 3rem;
     padding-bottom: 2rem;
   }
 
   .overlay p {
     width: 80%;
     font-size: 1.8rem !important;
+    line-height: 2rem;
   }
 }
