@@ -8,11 +8,16 @@
     height: 65vh;
     overflow: hidden;
     position: relative;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+
+    &:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+    transform: scale(1.02);
+  }
   
     .nextImage {
       object-fit: cover;
-      border-top-right-radius: 6px;
-      border-top-left-radius: 6px;
+      border-radius: 6px;
     }
   }
 
