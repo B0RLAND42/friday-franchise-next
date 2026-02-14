@@ -27,7 +27,7 @@
       span {
         font-weight: 700;
         color: goldenrod;
-        text-shadow: 0 0 20px #333333, 0 0 20px #000000;
+        text-shadow: 0 2px 20px #333333, 0 2px 20px #000000;
       }
     }
 
@@ -42,7 +42,7 @@
         color: $primaryColor;
         text-shadow: none;
         background-color: goldenrod;
-        padding: 3px 10px 3px 6px;
+        padding: 1px 10px 3px 6px;
         border-radius: 4px;
         font-style: italic;
         font-weight: 700;

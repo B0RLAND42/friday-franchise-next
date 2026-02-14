@@ -11,7 +11,7 @@ function HeroMovieSection({ title, bgImage }) {
     >
       <div className={styles.overlay}>
         <h1><span>{title}</span></h1>
-        <p>Browse info from<br/><span>FRIDAY THE 13th</span> movies</p>
+        <p>Browse <span>FRIDAY THE 13th</span> movie info</p>
       </div>
       
     </div>
