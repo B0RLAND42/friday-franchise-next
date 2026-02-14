@@ -1,0 +1,70 @@
+@use '@/styles/scss/abstracts/' as *;
+
+.articleMain {
+  text-align: center;
+
+  .imageBox {
+    height: 35vh;
+    overflow: hidden;
+    position: relative;
+
+    .nextImage {
+      object-fit: cover;
+      border-top-right-radius: 6px;
+      border-top-left-radius: 6px;
+    }
+  }
+  
+  .articleContent {
+    padding: 0 1rem 1rem 1rem;
+    margin: 0;
+    
+
+    h1 {
+      font-size: 1.5em;
+      color: $primaryColor;
+    }
+
+    h2, h3 {
+      text-align: left;
+    }
+
+    p {
+      text-align: left;
+      font-weight: bold;
+      text-shadow: 0 0 3px #f0f0f0;
+    }
+
+    span {
+      background-color: goldenrod;
+      padding: 4px 6px;
+      border-radius: 4px;
+    }
+
+  }
+}
+
+.articleFooter {
+  padding-bottom: 2rem;
+  text-align: center;
+
+  button {
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+
+  button:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+    transform: translateY(-2px);
+  }
+}
+
+.back {
+  background: $primaryGradient;
+  padding: 1px;
+}
+
+@media (max-width: 675px) {
+  .articleContent h1 {
+    font-size: 1.3em !important;
+  }
+}

@@ -8,9 +8,9 @@ import { useRouter } from 'next/router';
 function ArticleDetail (props) {
   const router = useRouter();
 
-  // function handleNavigate(){
-  //   router.push(router.pathname + '/' + props.id);
-  // }
+  function handleNavigateBack() {
+    router.push("/fridaytv"); // or "/docs" depending on your app
+  }
   
   return (
     <div className={styles.back}>
@@ -93,7 +93,7 @@ function ArticleDetail (props) {
           <ButtonLink path={props.url} target="_blank">
             BACK
           </ButtonLink> :
-          <Button type="button" onClick={() => router.back()}>
+          <Button type="button" onClick={handleNavigateBack}>
             BACK
           </Button>
         }

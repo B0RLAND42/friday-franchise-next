@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 import Head from "next/head";
-import ArticleDetail from "@/components/feature/articles/ArticleDetail/ArticleDetail";
+import ArticleDetailDoc from "@/components/feature/articles/ArticleDetail/ArticleDetailDoc";
 
 const ArticleDetailPage = ({ article }) => {
   return (
@@ -12,7 +12,7 @@ const ArticleDetailPage = ({ article }) => {
           description={article.title}
         />
       </Head>
-      <ArticleDetail 
+      <ArticleDetailDoc
         title={article.title}
         image={article.image}
         description={article.description}
