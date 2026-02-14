@@ -9,7 +9,7 @@ function ArticleDetail(props) {
   const router = useRouter();
 
   function handleNavigateBack() {
-    router.push("/fridaydocs"); // or "/docs" depending on your app
+    router.push("/fridaydoc"); // or "/docs" depending on your app
   }
 
   return (

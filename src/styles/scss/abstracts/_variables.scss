@@ -10,11 +10,28 @@ $brandSkewColor: goldenrod;
 $dangerColor: #7f1d1d;
 $dangerHighlight: #be123c;
 
-$primaryGradient: linear-gradient(
-  to right,
-  $primaryColor 0%,
-  lighten($primaryColor, 20%) 50%,
-  $primaryColor 100%
+$primaryGradient:
+  radial-gradient(
+    circle at 20% 30%,
+    lighten($primaryColor, 25%) 0%,
+    transparent 50%
+  ),
+  radial-gradient(
+    circle at 80% 70%,
+    lighten($primaryColor, 15%) 0%,
+    transparent 55%
+  ),
+  linear-gradient(
+    135deg,
+    darken($primaryColor, 15%),
+    $primaryColor
+  );
+
+$secondaryGradient: radial-gradient(
+  ellipse at center,
+  lighten($primaryColor, 30%) 0%,
+  $primaryColor 70%,
+  darken($primaryColor, 30%) 100%
 );
 
 $footerGradient: linear-gradient(
